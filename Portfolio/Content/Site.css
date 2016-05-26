@@ -1,0 +1,129 @@
+﻿body {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    background-color:white;
+}
+.navbar{
+    background-color:beige;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;    
+}
+
+div.promoArea {
+    min-height: 350px;
+}
+h2{
+    font-family:'Lucida Console';
+    font-size:24px;
+}
+h4{
+    font-family:'Arizonia',cursive;
+}
+p{
+    font-family:'Arizonia',cursive;
+    text-align:center;
+    font-size:24px;
+    
+}
+/*Created a custom class to specify the paragraph font I wanted to use*/
+.paragraph{
+    font-family:'Lucida Console';
+    font-size:22px;
+}
+div.custom{
+    font-family:'Arizonia', cursive;
+    font-size:24px;
+}
+.footer1{
+    font-size:20px;
+    font-family:'Arizonia', cursive;
+}
+/*The original color is black when downloaded. Once the link is applied it turns blue. Since soundcloud is
+    specifically orange I wanted to call that out
+*/
+.soundcloud{
+    color:orange;      
+}
+
+div.graduation {
+    background: url('../images/graduation .jpg');
+    background-size:cover;   
+}
+div.columbusSky {
+    background: url('../images/Columbus-OH-Skyline.jpg')center no-repeat;
+    background-size:cover;
+    padding:0;
+}
+div.feedbackA {
+    background: url('../images/feedback 1.png') center;
+    background-size:cover;
+}
+div.feedbackB {
+    background: url('../images/feedback 2.png') center;
+    background-size:cover;
+}
+.vertical-center{
+    min-height:350px;
+    display:flex;
+    align-items:center;
+    
+}
+.square{
+    background: #4fb1a2;    
+}
+.overlay{
+    margin:0 auto;
+    padding: 0;
+    background: #4fb1a2;
+    color: #fff;
+    opacity:.8;
+    text-align:center;
+}
+div.skills{
+     background-color: #4fb1a2;
+     text-align:center;
+     font-family:'Lucida Console';
+     width:585px;
+     color:white;
+     font-size:22px;
+}
+
+.content{
+    position:absolute;
+    height:80%;
+    width:90%;
+    padding:10% 5%;
+}
+.table{
+    height:100%;
+    width:100%;
+    display:table;
+}
+.table-cell{
+    display:table-cell;
+    height:100%;
+    width:100%;
+    vertical-align:middle;
+}
+/*background image stuff
+
+*/
+.bgImage {
+    background-color: #454545;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+

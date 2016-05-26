@@ -1,0 +1,79 @@
+﻿@model IEnumerable<Portfolio.Models.Project>
+
+@{
+    ViewBag.Title = "Special Projects";
+}
+
+<h2>Special Projects</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<div class="row">
+    @foreach (var item in Model)
+
+    {
+        /*Originally this had a table up under the pictures. I didn't want to leave the table so I customized the design
+        The overlay not only details the name of the project and description it is also a link to my github page for each
+        project.
+         */
+        <div class="col-md-3 square bgImage vertical-center " style="border-color:#4fb1a2; border-width:4px; border-style:solid; margin-right:20px; background-image: url('@item.ProjectImage')">
+            <div class="content">
+                <div class="table">
+                    <a href="@item.GitHubLink" target="_blank">
+                        <div class="overlay">
+                            <div class="Table-cell">
+                                <h2>@item.ProjectName</h2>
+                                <p>@item.ProjectDescription</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    }
+
+</div>
+
+@*<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProjectName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProjectDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProjectImage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GitHubLink)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProjectName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProjectDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProjectImage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GitHubLink)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProjectID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ProjectID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProjectID })
+        </td>
+    </tr>
+}*@
+
+@*</table>*@
